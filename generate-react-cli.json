@@ -1,0 +1,159 @@
+{
+    "component": {
+        "default": {
+            "customTemplates": {
+                "component": "src/templates/default/TemplateName/TemplateName.tsx",
+                "lazy": "src/templates/default/TemplateName/TemplateName.lazy.tsx",
+                "story": "src/templates/default/TemplateName/TemplateName.stories.tsx",
+                "test": "src/templates/default/TemplateName/TemplateName.test.tsx",
+                "types": "src/templates/default/TemplateName/TemplateName.types.ts"
+            },
+            "path": "src/components/00-hypotheticals",
+            "withLazy": true,
+            "withStory": true,
+            "withStyle": false,
+            "withTest": false,
+            "withTypes": true
+        },
+        "atom": {
+            "customTemplates": {
+                "component": "src/templates/default/TemplateName/TemplateName.tsx",
+                "lazy": "src/templates/default/TemplateName/TemplateName.lazy.tsx",
+                "story": "src/templates/default/TemplateName/TemplateName.stories.tsx",
+                "test": "src/templates/default/TemplateName/TemplateName.test.tsx",
+                "types": "src/templates/default/TemplateName/TemplateName.types.ts"
+            },
+            "path": "src/components/01-atoms",
+            "withLazy": true,
+            "withStory": true,
+            "withStyle": false,
+            "withTest": false,
+            "withTypes": true
+        },
+        "molecule": {
+            "customTemplates": {
+                "component": "src/templates/default/TemplateName/TemplateName.tsx",
+                "lazy": "src/templates/default/TemplateName/TemplateName.lazy.tsx",
+                "story": "src/templates/default/TemplateName/TemplateName.stories.tsx",
+                "test": "src/templates/default/TemplateName/TemplateName.test.tsx",
+                "types": "src/templates/default/TemplateName/TemplateName.types.ts"
+            },
+            "path": "src/components/02-molecules",
+            "withLazy": true,
+            "withStory": true,
+            "withStyle": false,
+            "withTest": false,
+            "withTypes": true
+        },
+        "particle": {
+            "customTemplates": {
+                "component": "src/templates/default/TemplateName/TemplateName.tsx",
+                "lazy": "src/templates/default/TemplateName/TemplateName.lazy.tsx",
+                "story": "src/templates/default/TemplateName/TemplateName.stories.tsx",
+                "test": "src/templates/default/TemplateName/TemplateName.test.tsx",
+                "types": "src/templates/default/TemplateName/TemplateName.types.ts"
+            },
+            "path": "src/components/03-particles",
+            "withLazy": true,
+            "withStory": true,
+            "withStyle": false,
+            "withTest": false,
+            "withTypes": true
+        },
+        "composite": {
+            "customTemplates": {
+                "component": "src/templates/default/TemplateName/TemplateName.tsx",
+                "lazy": "src/templates/default/TemplateName/TemplateName.lazy.tsx",
+                "story": "src/templates/default/TemplateName/TemplateName.stories.tsx",
+                "test": "src/templates/default/TemplateName/TemplateName.test.tsx",
+                "types": "src/templates/default/TemplateName/TemplateName.types.ts"
+            },
+            "path": "src/components/04-composites",
+            "withLazy": true,
+            "withStory": true,
+            "withStyle": false,
+            "withTest": false,
+            "withTypes": true
+        },
+        "material": {
+            "customTemplates": {
+                "component": "src/templates/default/TemplateName/TemplateName.tsx",
+                "lazy": "src/templates/default/TemplateName/TemplateName.lazy.tsx",
+                "story": "src/templates/default/TemplateName/TemplateName.stories.tsx",
+                "test": "src/templates/default/TemplateName/TemplateName.test.tsx",
+                "types": "src/templates/default/TemplateName/TemplateName.types.ts"
+            },
+            "path": "src/components/05-materials",
+            "withLazy": true,
+            "withStory": true,
+            "withStyle": false,
+            "withTest": false,
+            "withTypes": true
+        },
+        "layout": {
+            "customTemplates": {
+                "component": "src/templates/default/TemplateName/TemplateName.tsx",
+                "lazy": "src/templates/default/TemplateName/TemplateName.lazy.tsx",
+                "story": "src/templates/default/TemplateName/TemplateName.stories.tsx",
+                "test": "src/templates/default/TemplateName/TemplateName.test.tsx",
+                "types": "src/templates/default/TemplateName/TemplateName.types.ts"
+            },
+            "path": "src/components/06-layouts",
+            "withLazy": true,
+            "withStory": true,
+            "withStyle": false,
+            "withTest": false,
+            "withTypes": true
+        },
+        "page": {
+            "customTemplates": {
+                "component": "src/templates/default/TemplateName/TemplateName.tsx",
+                "lazy": "src/templates/default/TemplateName/TemplateName.lazy.tsx",
+                "story": "src/templates/default/TemplateName/TemplateName.stories.tsx",
+                "test": "src/templates/default/TemplateName/TemplateName.test.tsx",
+                "types": "src/templates/default/TemplateName/TemplateName.types.ts"
+            },
+            "path": "src/components/07-pages",
+            "withLazy": true,
+            "withStory": true,
+            "withStyle": false,
+            "withTest": false,
+            "withTypes": true
+        },
+        "app": {
+            "customTemplates": {
+                "component": "src/templates/default/TemplateName/TemplateName.tsx",
+                "lazy": "src/templates/default/TemplateName/TemplateName.lazy.tsx",
+                "story": "src/templates/default/TemplateName/TemplateName.stories.tsx",
+                "test": "src/templates/default/TemplateName/TemplateName.test.tsx",
+                "types": "src/templates/default/TemplateName/TemplateName.types.ts"
+            },
+            "path": "src/components/08-apps",
+            "withLazy": true,
+            "withStory": true,
+            "withStyle": false,
+            "withTest": false,
+            "withTypes": true
+        },
+        "provider": {
+            "customTemplates": {
+                "component": "src/templates/provider/TemplateName/TemplateName.tsx",
+                "context": "src/templates/provider/TemplateName/TemplateName.context.ts",
+                "story": "src/templates/default/TemplateName/TemplateName.stories.tsx",
+                "types": "src/templates/provider/TemplateName/TemplateName.types.ts"
+            },
+            "path": "src/components/08-providers",
+            "withContext": true,
+            "withLazy": false,
+            "withStory": true,
+            "withStyle": false,
+            "withTest": false,
+            "withTypes": true
+        }
+    },
+    "cssPreprocessor": "css",
+    "testLibrary": "None",
+    "usesCssModule": false,
+    "usesStyledComponents": false,
+    "usesTypeScript": true
+}

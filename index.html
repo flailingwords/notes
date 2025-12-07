@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Nick's Notes</title>
+        <script>
+            const enforceTheme = () => {
+                const storedTheme = localStorage.theme ?? 'system'
+
+                switch (storedTheme) {
+                    case 'dark':
+                        document.documentElement.classList.toggle('dark', true)
+                        document.documentElement.classList.toggle(
+                            'light',
+                            false
+                        )
+                        break
+                    case 'light':
+                        document.documentElement.classList.toggle('dark', false)
+                        document.documentElement.classList.toggle('light', true)
+                        break
+                    case 'system':
+                        document.documentElement.classList.toggle(
+                            'dark',
+                            window.matchMedia('(prefers-color-scheme: dark)')
+                                .matches
+                        )
+                        document.documentElement.classList.toggle(
+                            'light',
+                            window.matchMedia('(prefers-color-scheme: light)')
+                                .matches
+                        )
+                }
+            }
+
+            enforceTheme()
+        </script>
+    </head>
+    <body>
+        <div id="root"></div>
+        <script type="module" src="/src/main.tsx"></script>
+    </body>
+</html>

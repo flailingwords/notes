@@ -1,0 +1,162 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:where(.dark, .dark *));
+@custom-variant light (&:where(.light, .light *));
+
+@keyframes logo-spin {
+    0% {
+        /* transform: rotate(0deg); */
+        transform: scaleX(1);
+    }
+
+    50% {
+        /* transform: rotate(360deg); */
+        transform: scaleX(-1);
+    }
+
+    100% {
+        /* transform: rotate(360deg); */
+        transform: scaleX(1);
+    }
+}
+
+@theme {
+    --color-logo: #646cffaa;
+    --color-link-dark: #646cff;
+    --color-link-light: #3842ff;
+    --color-link-hover-dark: #535bf2;
+    --color-link-hover-light: #9fa4ff;
+    --color-graaaaaay: #213547;
+    --color-button-light: #f9f9f9;
+    --color-button-dark: #1a1a1a;
+    --color-dark-text: #ffffffde;
+    --color-dark-bg: #242424;
+    --color-light-text: #242424;
+    --color-light-bg: #ffffffde;
+    --color-rtd: #888;
+    --text-rendering-speed: optimizespeed;
+    --text-rendering-legibility: optimizelegibility;
+    --text-rendering-geometric: geometricprecision;
+    --shadow-nav-light: 0 3px 15px rgb(0 0 0 / 25%);
+    --shadow-nav-dark: 0 3px 15px #04d9ff;
+    --shadow-sidemenu-dark: 3px 3px 10px #39ff14;
+    --shadow-sidemenu-light: 3px 3px 10px rgb(0 0 0 / 25%);
+    --shadow-main-light: 3px 3px 15px rgb(0 0 0 / 25%);
+    --shadow-main-dark: 3px 3px 15px #ff073a;
+    --animate-spin-slow: spin 3.14s linear infinite;
+}
+
+@utility will-change-filter {
+    will-change: filter;
+}
+
+@utility transition-border-color {
+    transition: border-color 0.25s;
+}
+
+@utility transition-filter {
+    transition: filter 300ms;
+}
+
+@utility filter-logo {
+    filter: drop-shadow(0 0 2em var(--color-logo));
+}
+
+@utility outline-button {
+    outline: 4px auto -webkit-focus-ring-color;
+}
+
+@utility decoration-inherit {
+    text-decoration: inherit;
+}
+
+@utility synthesis-none {
+    font-synthesis: none;
+}
+
+@utility rendering-* {
+    text-rendering: --value(
+        'auto',
+        'inherit',
+        'initial',
+        'revert',
+        'revert-layer',
+        'unset'
+    );
+    text-rendering: --value(--text-rendering-*);
+}
+
+@utility animate-logo-spin {
+    animation: logo-spin infinite 30s ease;
+}
+
+@utility w-half {
+    width: 50%;
+}
+
+@layer base {
+    :root {
+        font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+
+        @apply synthesis-none rendering-legibility dark:text-dark-text dark:bg-dark-bg text-light-text bg-light-bg leading-6 font-normal antialiased scheme-light-dark;
+    }
+
+    body {
+        @apply pt-20;
+    }
+}
+
+@layer base {
+    a {
+        @apply text-link-light hover:text-link-hover-light dark:text-link-dark dark:hover:text-link-hover-dark font-medium decoration-inherit;
+    }
+
+    a.active {
+        @apply border-b border-b-slate-600/50 dark:border-b-white;
+    }
+
+    body {
+        @apply relative m-0 min-h-[100vh] min-w-80;
+    }
+
+    h1 {
+        @apply text-5xl leading-12;
+    }
+
+    button {
+        @apply bg-button-dark transition-border-color cursor-pointer rounded-lg border border-solid border-transparent px-5 py-2.5 font-[inherit] text-[1em] font-medium;
+    }
+
+    button:hover {
+        @apply border-link-dark;
+    }
+
+    button:focus,
+    button:focus-visible {
+        @apply outline-button;
+    }
+}
+
+@layer base {
+    #root {
+        @apply mx-auto my-0 max-h-dvh max-w-7xl p-8 text-center;
+    }
+}
+
+@layer components {
+    .logo {
+        @apply will-change-filter transition-filter hover:filter-logo h-24 p-6;
+    }
+
+    .logo a {
+        @apply animate-logo-spin;
+    }
+
+    .card {
+        @apply p-8;
+    }
+
+    .read-the-docs {
+        @apply text-rtd;
+    }
+}

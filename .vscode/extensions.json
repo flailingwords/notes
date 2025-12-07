@@ -1,0 +1,11 @@
+{
+    "recommendations": [
+        "bradlc.vscode-tailwindcss",
+        "dbaeumer.vscode-eslint",
+        "esbenp.prettier-vscode",
+        "google.wireit",
+        "nefrob.vscode-just-syntax",
+        "streetsidesoftware.code-spell-checker",
+        "codeandstuff.package-json-upgrade"
+    ]
+}

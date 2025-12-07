@@ -1,0 +1,22 @@
+{
+    "compilerOptions": {
+        "composite": true,
+        "skipLibCheck": true,
+        "module": "ESNext",
+        "moduleResolution": "bundler",
+        "allowSyntheticDefaultImports": true,
+        "strict": true,
+
+        /* Paths */
+        "baseUrl": ".",
+        "paths": {
+            "@/*": ["./src/*"]
+        },
+        "rootDir": "."
+    },
+    "include": [
+        "vite.config.ts",
+        ".storybook/main.ts",
+        ".storybook/preview.tsx"
+    ]
+}
