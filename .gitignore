@@ -16,6 +16,10 @@
 !.vscode/
 !.vscode/extensions.json
 
+!docker/
+!docker/**/*
+!Dockerfile
+
 !docs/
 !docs/**/
 !docs/**/*
