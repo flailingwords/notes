@@ -11,11 +11,13 @@ import type { MainSideBarMenuProps } from './MainSideBarMenu.types'
 import RecursiveMenu from '@/components/02-molecules/RecursiveMenu/RecursiveMenu'
 import LoadingPage from '@/components/07-pages/LoadingPage/LoadingPage'
 import { DocsIndexContext } from '@/components/08-providers/DocsIndexProvider/DocsIndexProvider.context'
+import { useScrollLockProviderContext } from '@/components/08-providers/ScrollLockProvider/ScrollLockProvider.context'
 
 const baseStyle =
     'dark:bg-dark-bg bg-light-bg dark:shadow-sidemenu-dark dark:hover:shadow-sidemenu-dark-hover shadow-sidemenu-light'
 
 const MainSideBarMenu: FC<MainSideBarMenuProps> = () => {
+    const { setScrollLocked } = useScrollLockProviderContext()
     const docsIndexContext = useContext(DocsIndexContext)
 
     const useDrawer = useMedia('(max-width: 768px)')
@@ -34,6 +36,10 @@ const MainSideBarMenu: FC<MainSideBarMenuProps> = () => {
             setCurrentLocation(pathname)
         }
     }, [pathname, currentLocation])
+
+    useEffect(() => {
+        setScrollLocked(drawerOpen)
+    }, [drawerOpen])
 
     if (docsIndexContext?.taxonomy == null) return <LoadingPage />
 
