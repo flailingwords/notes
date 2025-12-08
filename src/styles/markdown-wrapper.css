@@ -1,0 +1,73 @@
+@reference "tailwindcss";
+
+@layer components {
+    .markdown-wrapper {
+        h2,
+        h3,
+        h4,
+        h5 {
+            @apply mt-12;
+        }
+
+        h1 {
+            @apply text-4xl leading-12;
+        }
+
+        h2 {
+            @apply text-3xl;
+        }
+
+        h3 {
+            @apply text-2xl;
+        }
+
+        h4 {
+            @apply text-xl;
+        }
+
+        h5 {
+            @apply text-lg;
+        }
+
+        li {
+            @apply italic;
+            @apply list-[circle];
+        }
+
+        div:has(ul > li) {
+            @apply font-bold;
+            @apply list-none;
+        }
+
+        div:has(ul > li > ul > li) {
+            @apply no-underline;
+        }
+
+        .external > ul > li > ul > li {
+            @apply list-disc;
+        }
+
+        .external ul > li > ul {
+            @apply pl-6;
+            @apply ml-6;
+        }
+
+        .external > ul > li {
+            @apply list-none;
+        }
+
+        .external > ul > li > span {
+            @apply underline;
+        }
+
+        blockquote {
+            @apply border-l-4 border-l-gray-600 bg-gray-600/25 p-5;
+        }
+
+        code {
+            @apply bg-gray-600/50;
+        }
+
+        @apply mb-10;
+    }
+}

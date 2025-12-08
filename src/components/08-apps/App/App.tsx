@@ -1,6 +1,7 @@
 import type { FC } from 'react'
 
 import '@/styles/index.css'
+import '@/styles/markdown-wrapper.css'
 
 import { Outlet } from '@tanstack/react-router'
 import { TanStackRouterDevtools } from '@tanstack/router-devtools'

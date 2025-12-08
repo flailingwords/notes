@@ -113,6 +113,9 @@
     :root {
         font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
+        scrollbar-gutter: stable;
+        scrollbar-color: #333 #111;
+
         @apply synthesis-none rendering-legibility dark:text-dark-text dark:bg-dark-bg text-light-text bg-light-bg leading-6 font-normal antialiased scheme-light-dark;
     }
 }
@@ -128,6 +131,8 @@
 
     body {
         @apply relative m-0 min-h-[100vh];
+
+        scrollbar-gutter: stable;
     }
 }
 
@@ -166,6 +171,10 @@
             @apply outline-button;
         }
     }
+
+    .scroll-lock {
+        @apply h-full w-full overflow-hidden;
+    }
 }
 
 @media screen and (width >= 768px) {
@@ -180,7 +189,7 @@
     }
 
     .main-section {
-        @apply left-6 md:left-64;
+        @apply left-6 mb-32 md:left-64;
 
         max-width: calc(100% - var(--main-section-offset));
     }
