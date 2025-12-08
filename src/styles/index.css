@@ -29,15 +29,15 @@
     --color-graaaaaay: #213547;
     --color-button-light: #f9f9f9;
     --color-button-dark: #1a1a1a;
-    --color-dark-text: #ffffffde;
+    --color-dark-text: #fff;
     --color-dark-bg: #242424;
     --color-light-text: #242424;
-    --color-light-bg: #ffffffde;
+    --color-light-bg: #fff;
     --color-rtd: #888;
     --text-rendering-speed: optimizespeed;
     --text-rendering-legibility: optimizelegibility;
     --text-rendering-geometric: geometricprecision;
-    --shadow-nav-light: 0 3px 15px rgb(0 0 0 / 25%);
+    --shadow-nav-light: 0 3px 15px rgb(96 96 96);
     --shadow-nav-dark: 0 3px 15px #04d9ff;
     --shadow-sidemenu-dark: 3px 3px 10px #39ff14;
     --shadow-sidemenu-light: 3px 3px 10px rgb(0 0 0 / 25%);
