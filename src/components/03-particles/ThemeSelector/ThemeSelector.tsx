@@ -10,6 +10,8 @@ import { useThemeProviderContext } from '@/components/08-providers/ThemeProvider
 
 import ThemeSelectorWrapper from './ThemeSelectorWrapper/ThemeSelectorWrapper'
 
+const sharedClass = 'm-auto block size-6'
+
 const ThemeSelector: FC<ThemeSelectorProps> = () => {
     const { theme, setTheme } = useThemeProviderContext()
 
@@ -17,7 +19,7 @@ const ThemeSelector: FC<ThemeSelectorProps> = () => {
         return (
             <ThemeSelectorWrapper>
                 <SunIcon
-                    className='size-6'
+                    className={sharedClass}
                     onClick={() => {
                         setTheme('dark')
                     }}
@@ -29,7 +31,7 @@ const ThemeSelector: FC<ThemeSelectorProps> = () => {
         return (
             <ThemeSelectorWrapper>
                 <MoonIcon
-                    className='size-6'
+                    className={sharedClass}
                     onClick={() => {
                         setTheme('system')
                     }}
@@ -40,7 +42,7 @@ const ThemeSelector: FC<ThemeSelectorProps> = () => {
     return (
         <ThemeSelectorWrapper>
             <NoSymbolIcon
-                className='size-6'
+                className={sharedClass}
                 onClick={() => {
                     setTheme('light')
                 }}

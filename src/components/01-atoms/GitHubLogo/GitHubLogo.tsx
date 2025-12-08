@@ -6,7 +6,7 @@ import ghMarkWhite from '@/assets/github-mark-white.png'
 
 const GitHubLogo: FC<GitHubLogoProps> = () => (
     <img
-        className='size-6 invert-100 dark:invert-0'
+        className='m-auto h-5 w-5 invert-100 dark:invert-0'
         src={ghMarkWhite}
         alt='GitHub Logo'
     />

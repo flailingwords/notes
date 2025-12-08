@@ -39,10 +39,13 @@
     --text-rendering-geometric: geometricprecision;
     --shadow-nav-light: 0 3px 15px rgb(96 96 96);
     --shadow-nav-dark: 0 3px 15px #04d9ff;
+    --shadow-nav-dark-hover: 0 5px 20px #08ffff;
     --shadow-sidemenu-dark: 3px 3px 10px #39ff14;
+    --shadow-sidemenu-dark-hover: 5px 5px 15px #66fd49;
     --shadow-sidemenu-light: 3px 3px 10px rgb(0 0 0 / 25%);
     --shadow-main-light: 3px 3px 15px rgb(0 0 0 / 25%);
     --shadow-main-dark: 3px 3px 15px #ff073a;
+    --shadow-main-dark-hover: 0px 0px 25px #f00;
     --animate-spin-slow: spin 3.14s linear infinite;
 }
 
@@ -90,8 +93,20 @@
     animation: logo-spin infinite 30s ease;
 }
 
+@utility h-half {
+    height: 50%;
+}
+
 @utility w-half {
     width: 50%;
+}
+
+@utility pull-left {
+    justify-self: start;
+}
+
+@utility pull-right {
+    justify-self: end;
 }
 
 @layer base {
@@ -99,10 +114,6 @@
         font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
 
         @apply synthesis-none rendering-legibility dark:text-dark-text dark:bg-dark-bg text-light-text bg-light-bg leading-6 font-normal antialiased scheme-light-dark;
-    }
-
-    body {
-        @apply pt-20;
     }
 }
 
@@ -116,30 +127,13 @@
     }
 
     body {
-        @apply relative m-0 min-h-[100vh] min-w-80;
-    }
-
-    h1 {
-        @apply text-5xl leading-12;
-    }
-
-    button {
-        @apply bg-button-dark transition-border-color cursor-pointer rounded-lg border border-solid border-transparent px-5 py-2.5 font-[inherit] text-[1em] font-medium;
-    }
-
-    button:hover {
-        @apply border-link-dark;
-    }
-
-    button:focus,
-    button:focus-visible {
-        @apply outline-button;
+        @apply relative m-0 min-h-[100vh];
     }
 }
 
 @layer base {
     #root {
-        @apply mx-auto my-0 max-h-dvh max-w-7xl p-8 text-center;
+        @apply relative h-full w-full text-center;
     }
 }
 
@@ -158,5 +152,36 @@
 
     .read-the-docs {
         @apply text-rtd;
+    }
+
+    .btn {
+        @apply bg-button-dark transition-border-color cursor-pointer rounded-lg border border-solid border-transparent px-5 py-2.5 font-[inherit] text-[1em] font-medium;
+
+        &:hover {
+            @apply border-link-dark;
+        }
+
+        &:focus,
+        &:focus-visible {
+            @apply outline-button;
+        }
+    }
+}
+
+@media screen and (width >= 768px) {
+    :root {
+        --main-section-offset: 288px;
+    }
+}
+
+@layer base {
+    :root {
+        --main-section-offset: 40px;
+    }
+
+    .main-section {
+        @apply left-6 md:left-64;
+
+        max-width: calc(100% - var(--main-section-offset));
     }
 }
