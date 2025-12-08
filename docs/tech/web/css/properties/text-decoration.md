@@ -39,9 +39,11 @@ The [`text-decoration`](https://developer.mozilla.org/en-US/docs/Web/CSS/text-de
 
 Default values are:
 
-- `color`: `currentcolor`
-- `style`: `solid`
-- `line`: `none`
+| Property | Value          |
+| -------- | -------------- |
+| color    | _currentcolor_ |
+| style    | `solid`        |
+| line     | `none`         |
 
 ## Rules
 
