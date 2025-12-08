@@ -20,9 +20,16 @@ const LandingPage: FC<LandingPageProps> = () => (
         </div>
 
         <div className='my-3'>
-            Beyond that, as part of the Flailing Words Collective, this
-            site/repository is intended to be maintained by the community.
-            Contributions are encouraged and welcomed!
+            Beyond that, as part of the{' '}
+            <a
+                href='https://flailingwords.com/'
+                target='_blank'
+                rel='noreferrer'
+            >
+                Flailing Words Collective
+            </a>
+            , this site/repository is intended to be maintained by the
+            community. Contributions are encouraged and welcomed!
         </div>
 
         <div className='my-3'>
