@@ -1,11 +1,11 @@
 import { useMemo, type FC } from 'react'
 
 import { useLocation } from '@tanstack/react-router'
-import Markdown from 'markdown-to-jsx'
 import useSWR from 'swr'
 
 import type { KnowledgeBasePageProps } from './KnowledgeBasePage.types'
 
+import MarkdownWrapper from '@/components/05-materials/MarkdownWrapper/MarkdownWrapper.lazy'
 import { useDocsIndexContext } from '@/components/08-providers/DocsIndexProvider/DocsIndexProvider.context'
 
 import type { FetcherException } from '@/lib/exceptions/FetcherException'
@@ -48,20 +48,15 @@ const KnowledgeBasePage: FC<KnowledgeBasePageProps> = () => {
 
     if (error != null) return <ErrorPage errorMessage={error} />
 
-    console.debug({ type: typeof docEndpoint, docEndpoint, data })
-
     if (typeof docEndpoint === 'string' && typeof data === 'string') {
         const frontMatter = handleFrontMatter(data)
 
-        console.debug('frontMatter:', frontMatter)
-
         return (
-            <div>
-                <h1>{frontMatter?.title ?? docEndpoint} </h1>
-                <Markdown className='external max-w-full text-left text-wrap wrap-normal *:my-2.5 *:text-wrap'>
-                    {data}
-                </Markdown>
-            </div>
+            <MarkdownWrapper
+                data={data}
+                docEndpoint={docEndpoint}
+                frontMatter={frontMatter}
+            />
         )
     }
 
