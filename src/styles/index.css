@@ -125,7 +125,7 @@
         @apply text-link-light hover:text-link-hover-light dark:text-link-dark dark:hover:text-link-hover-dark font-medium decoration-inherit;
     }
 
-    a.active {
+    .main-sidebar-menu a.active {
         @apply border-b border-b-slate-600/50 dark:border-b-white;
     }
 

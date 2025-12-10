@@ -14,7 +14,7 @@ import { DocsIndexContext } from '@/components/08-providers/DocsIndexProvider/Do
 import { useScrollLockProviderContext } from '@/components/08-providers/ScrollLockProvider/ScrollLockProvider.context'
 
 const baseStyle =
-    'dark:bg-dark-bg bg-light-bg dark:shadow-sidemenu-dark dark:hover:shadow-sidemenu-dark-hover shadow-sidemenu-light'
+    'main-sidebar-menu dark:bg-dark-bg bg-light-bg dark:shadow-sidemenu-dark dark:hover:shadow-sidemenu-dark-hover shadow-sidemenu-light'
 
 const MainSideBarMenu: FC<MainSideBarMenuProps> = () => {
     const { setScrollLocked } = useScrollLockProviderContext()
