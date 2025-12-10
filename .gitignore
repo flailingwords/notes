@@ -49,8 +49,9 @@ public/docs/
 !tsconfig.node.json
 !vite.config.ts
 
+!CONTRIBUTING.md
+!CONTRIBUTORS.md
 !LICENSE.md
-
 !README.md
 
 !index.html
