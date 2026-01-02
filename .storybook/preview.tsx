@@ -5,7 +5,7 @@ import {
 } from '@tanstack/react-router'
 import { initialize, mswLoader } from 'msw-storybook-addon'
 
-import type { Preview, Decorator } from '@storybook/react-vite'
+import type { Decorator, Preview } from '@storybook/react-vite'
 
 import '../src/styles/index.css'
 
