@@ -39,12 +39,12 @@ public/docs/
 
 !.editorconfig
 !.prettierignore
-!.stylelintrc.mjs
-!changelog.config.js
-!eslint.config.mjs
+!.stylelintrc.*js
+!changelog.config.*js
+!eslint.config.*js
 !generate-react-cli.json
 !justfile
-!prettier.config.mjs
+!prettier.config.*js
 !tsconfig.json
 !tsconfig.node.json
 !vite.config.ts

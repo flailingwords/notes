@@ -6,6 +6,7 @@
         "moduleResolution": "bundler",
         "allowSyntheticDefaultImports": true,
         "strict": true,
+        "jsx": "react-jsx",
 
         /* Paths */
         "baseUrl": ".",
@@ -18,5 +19,6 @@
         "vite.config.ts",
         ".storybook/main.ts",
         ".storybook/preview.tsx"
-    ]
+    ],
+    "exclude": [".wireit"]
 }
