@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 
 import TopLevelTopicLayout from './TopLevelTopicLayout'
 
-const meta = {
+const meta: Meta = {
     component: TopLevelTopicLayout
 } satisfies Meta<typeof TopLevelTopicLayout>
 

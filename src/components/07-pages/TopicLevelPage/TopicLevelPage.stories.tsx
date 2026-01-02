@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 
 import TopicLevelPage from './TopicLevelPage'
 
-const meta = {
+const meta: Meta = {
     component: TopicLevelPage
 } satisfies Meta<typeof TopicLevelPage>
 

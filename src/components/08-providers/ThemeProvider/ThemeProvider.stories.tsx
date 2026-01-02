@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 
 import ThemeProvider from './ThemeProvider'
 
-const meta = {
+const meta: Meta = {
     component: ThemeProvider
 } satisfies Meta<typeof ThemeProvider>
 

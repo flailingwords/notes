@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 
 import GitHubLogo from './GitHubLogo'
 
-const meta = {
+const meta: Meta = {
     component: GitHubLogo
 } satisfies Meta<typeof GitHubLogo>
 

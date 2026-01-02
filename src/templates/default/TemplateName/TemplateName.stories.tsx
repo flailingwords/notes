@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 
 import TemplateName from './TemplateName'
 
-const meta = {
+const meta: Meta = {
     component: TemplateName
 } satisfies Meta<typeof TemplateName>
 

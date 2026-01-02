@@ -4,7 +4,7 @@ import ThemeProvider from '@/components/08-providers/ThemeProvider/ThemeProvider
 
 import Header from './Header'
 
-const meta = {
+const meta: Meta = {
     component: Header
 } satisfies Meta<typeof Header>
 

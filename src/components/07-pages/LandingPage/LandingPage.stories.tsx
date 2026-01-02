@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 
 import LandingPage from './LandingPage'
 
-const meta = {
+const meta: Meta = {
     component: LandingPage
 } satisfies Meta<typeof LandingPage>
 

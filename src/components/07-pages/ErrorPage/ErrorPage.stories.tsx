@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 
 import ErrorPage from './ErrorPage'
 
-const meta = {
+const meta: Meta = {
     component: ErrorPage
 } satisfies Meta<typeof ErrorPage>
 

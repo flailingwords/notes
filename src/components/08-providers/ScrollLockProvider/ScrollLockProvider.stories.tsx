@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 
 import ScrollLockProvider from './ScrollLockProvider'
 
-const meta = {
+const meta: Meta = {
     component: ScrollLockProvider
 } satisfies Meta<typeof ScrollLockProvider>
 

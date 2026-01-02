@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 
 import LoadingPage from './LoadingPage'
 
-const meta = {
+const meta: Meta = {
     component: LoadingPage
 } satisfies Meta<typeof LoadingPage>
 

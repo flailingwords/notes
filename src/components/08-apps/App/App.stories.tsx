@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 
 import App from './App'
 
-const meta = {
+const meta: Meta = {
     component: App
 } satisfies Meta<typeof App>
 

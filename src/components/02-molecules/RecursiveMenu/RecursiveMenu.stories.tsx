@@ -6,7 +6,7 @@ import DocsIndexProvider from '@/components/08-providers/DocsIndexProvider/DocsI
 
 import RecursiveMenu from './RecursiveMenu'
 
-const meta = {
+const meta: Meta = {
     component: RecursiveMenu
 } satisfies Meta<typeof RecursiveMenu>
 

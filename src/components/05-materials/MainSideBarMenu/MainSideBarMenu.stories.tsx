@@ -4,7 +4,7 @@ import DocsIndexProvider from '@/components/08-providers/DocsIndexProvider/DocsI
 
 import MainSideBarMenu from './MainSideBarMenu'
 
-const meta = {
+const meta: Meta = {
     component: MainSideBarMenu
 } satisfies Meta<typeof MainSideBarMenu>
 

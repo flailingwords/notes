@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 
 import KnowledgeBaseLayout from './KnowledgeBaseLayout'
 
-const meta = {
+const meta: Meta = {
     component: KnowledgeBaseLayout
 } satisfies Meta<typeof KnowledgeBaseLayout>
 

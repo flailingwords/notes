@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 
 import MarkdownWrapper from './MarkdownWrapper'
 
-const meta = {
+const meta: Meta = {
     component: MarkdownWrapper
 } satisfies Meta<typeof MarkdownWrapper>
 

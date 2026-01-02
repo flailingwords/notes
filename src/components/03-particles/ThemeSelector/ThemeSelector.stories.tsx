@@ -4,7 +4,7 @@ import ThemeProvider from '@/components/08-providers/ThemeProvider/ThemeProvider
 
 import ThemeSelector from './ThemeSelector'
 
-const meta = {
+const meta: Meta = {
     component: ThemeSelector
 } satisfies Meta<typeof ThemeSelector>
 

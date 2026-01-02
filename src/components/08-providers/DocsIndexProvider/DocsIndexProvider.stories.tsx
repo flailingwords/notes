@@ -2,7 +2,7 @@ import type { Meta, StoryObj } from '@storybook/react-vite'
 
 import DocsIndexProvider from './DocsIndexProvider'
 
-const meta = {
+const meta: Meta = {
     component: DocsIndexProvider
 } satisfies Meta<typeof DocsIndexProvider>
 
