@@ -1,6 +1,6 @@
 import { createElement, type FC } from 'react'
 
-import Markdown from 'markdown-to-jsx'
+import { Markdown } from 'markdown-to-jsx'
 
 import type { MarkdownWrapperProps } from './MarkdownWrapper.types'
 
